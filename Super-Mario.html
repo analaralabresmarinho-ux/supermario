@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supermario</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background:url('https://nintendoeverything.com/wp-content/uploads/SuperMarioRunDirectFeedDemo_FEzack.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+         }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            text-align: center;
+            color: white; /* Cor do texto geral */
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            padding: 10px 0;
+            margin-bottom: 25px;
+            outline: none;
+            color: white;
+            box-sizing: border-box; 
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(90deg, #a88a64, #7a5e42);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #b78958, #704f24);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+
+        .footer-text a {
+            color: #664419;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Bem-Vindo</Bem-Vindo></h1>
+        <form action="/login" method="post">
+            <label for="Nome de Usuário">Nome de Usuário:</label>
+            <input type="text" id="Nome de Usuário" name="Nome de Usuário" required>
+
+            <label for="Senha">Senha:</label>
+            <input type="Senha" id="Senha" name="Senha" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="footer-text">
+            se você não tem uma conta, <a href="/register">registre-se aqui</a>
+        </div>
+    </div>
+    
+</body>
+</html>
